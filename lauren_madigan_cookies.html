@@ -42,7 +42,7 @@
     <figure>
       <img src="https://static01.nyt.com/images/2014/03/11/dining/chocolatecookie-still/chocolatecookie-still-articleLarge.jpg" alt= "Chocolate Chip Cookies" />
       <figcaption>
-         <a href="https://www.verybestbaking.com/recipes/18476/original-nestle-toll-house-chocolate-chip-cookies/">The baking of cookies</a>
+         <center><a href="https://www.verybestbaking.com/recipes/18476/original-nestle-toll-house-chocolate-chip-cookies/">The baking of cookies</a></center>
       </figcaption>
     </figure>
 
@@ -57,6 +57,49 @@
         <li> bake for five minutes</li>
       </ul>
     </section>
+
+    <section id="reviews">
+
+    <form action= "<%= reviews_url %>" method= 'post'>
+
+      <label for="name">Name: </label>
+      <input id="name" type="text" name= "name">
+
+      <!-- <label for= "rating">Rating: </label>
+      <select id="rating" name="rating_options">
+        <option value= "1">1</option>
+        <option value= "2">2</option>
+        <option value= "3">3</option>
+        <option value= "4">4</option>
+        <option value= "5">5</option>
+      </select> -->
+      <!-- will give drop down to select review -->
+
+      <label for="rating">Rating</label>
+       1<input type="radio" name="rating" value="1" checked>
+       2<input type="radio" name="rating" value="2">
+       3<input type="radio" name="rating" value="3">
+       4<input type="radio" name="rating" value="4">
+       5<input type="radio" name="rating" value="5">
+
+      <label for= "expertise">Cooking Expertise: </label>
+      <select id="expertise" name="expertise">
+        <option value="Select Cooking Expertise" disable="true" selected="true">Select Cooking Expertise</option>
+
+        <option value="Sometimes Cook">Sometimes Cook</option>
+        <option value="Cook Everyday">Cook Everyday</option>
+        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+        <option value="Professional Chef">Professional Chef</option>
+      </select>
+
+      <label>Review
+        <textarea name="review"cols= "30" rows= "30">  </textarea>
+      </label>
+
+      <input type="submit" value="Submit Review">
+
+    </form>
+  </section>
 
     <footer>
       <p>Original Recipe by ToolHouse Cookies </p>
