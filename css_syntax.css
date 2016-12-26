@@ -1,0 +1,64 @@
+body {
+  font-family: "Arial, sans-serif";
+}
+
+header > img {
+  width: 100px;
+}
+
+h1 {
+  font-size: 38px;
+  color: blue
+}
+
+h2 {
+  font-size: 32px;
+  color: blue
+}
+
+h3 {
+  color: dark blue
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*nav {
+  border: 10px solid black;
+  /*padding: 300px;*/
+}*/
+
+body {
+  padding: 20px;
+  border: 10px solid gold;
+}
+
+input[type= "submit"]{
+  background-color: #fdf3ba;
+}
+
+input.last-child.hover {
+  -webkit-filter: brightness(90%);
+}
+
+ul li.nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    /*background-image: url(./stars.png);*/
+    vertical-align: bottom;
+}
+
+.aa-logo {
+  border: 10 px solid black
+}
